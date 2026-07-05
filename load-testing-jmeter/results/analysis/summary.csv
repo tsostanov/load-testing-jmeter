@@ -1,0 +1,2 @@
+samples,success,errors,error_pct,avg_ms,min_ms,max_ms,p90_ms,p95_ms,p99_ms,throughput_rps
+300,275,25,8.33,1110.27,77,1798,1680.7,1751.65,1785.04,50.28

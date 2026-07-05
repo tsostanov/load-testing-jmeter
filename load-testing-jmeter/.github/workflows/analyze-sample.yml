@@ -1,0 +1,16 @@
+name: Analyze sample JTL
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: python scripts/analyze_jtl.py results/sample/stress_503_sample.csv --out results/analysis

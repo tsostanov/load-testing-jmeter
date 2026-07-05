@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.idea/
+.vscode/
+
+# Raw JMeter outputs can be large and may contain real URLs/tokens.
+results/raw/
+reports/
+*.log
